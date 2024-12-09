@@ -1,0 +1,175 @@
+/* General Layout */
+.experience-body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e3f2fd 30%, #f4f7fc 70%); /* Gradient background */
+    color: #000; /* Set the default text color to black */
+}
+
+.experience-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px;
+    background-color: #ffffff; /* Clean white background */
+    border-radius: 8px; /* Rounded corners for main content */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Section */
+.experience-h1 {
+    font-size: 3.5rem;
+    color: #000; /* Ensure title text is black */
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.experience-h2 {
+    font-size: 2.4rem;
+    color: #000; /* Ensure subtitle text is black */
+    margin-top: 20px;
+    font-weight: 600;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.experience-h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 4px;
+   
+    border-radius: 2px;
+}
+
+/* Section Container */
+.experience-section {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Education Section */
+.experience-education-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #000; /* Ensure education text is black */
+}
+
+.experience-education-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.experience-module {
+    display: flex;
+    justify-content: space-between;
+    margin: 12px 0;
+    color: #000; /* Ensure module text is black */
+}
+
+.experience-module-name {
+    font-weight: 600;
+    color: #0a0606;
+}
+
+.experience-module-result {
+    font-style: italic;
+    color: #000; /* Ensure result text is black */
+}
+
+/* Work Experience Section */
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.experience-timeline-item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #000; /* Ensure work experience text is black */
+}
+
+.experience-timeline-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+.experience-timeline-item h2 {
+    color: #000; /* Ensure the header text is black */
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.experience-timeline-item p {
+    font-size: 1.1rem;
+    color: #000; /* Ensure paragraph text is black */
+}
+
+.experience-timeline-item ul {
+    padding-left: 20px;
+}
+
+.experience-timeline-item li {
+    font-size: 1rem;
+    color: #000; /* Ensure list item text is black */
+    margin-bottom: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .experience-profile {
+        flex-direction: column;
+    }
+
+    .experience-timeline-item {
+        flex-direction: column;
+    }
+
+    .experience-module {
+        flex-direction: column;
+    }
+
+    /* Adjust title font sizes for mobile */
+    .experience-h1 {
+        font-size: 2.5rem;
+    }
+
+    .experience-h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Additional Styling for Interactive Elements */
+.experience-timeline-item:hover,
+.experience-education-item:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+}
+
+footer {
+    background-color: #141212;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+ 
+}
